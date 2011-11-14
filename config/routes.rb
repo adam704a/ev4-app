@@ -1,5 +1,21 @@
 Ev4App::Application.routes.draw do
 
+  resources :vouchers
+
+  resources :plans
+
+  resources :voucher_accounts
+
+  resources :users
+
+  resources :clients
+
+  get "client/new"
+
+  get "pages/home"
+
+  get "pages/contact"
+
   resources :organizations
 
   # The priority is based upon order of creation:

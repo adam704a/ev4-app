@@ -8,8 +8,17 @@ gem 'rails', '3.1.1'
 group :production do
   gem 'pg'
 end
-group :development, :test do
+
+group :development do
+  gem 'annotate'
+  gem 'webrat', '0.7.1'
   gem 'sqlite3'
+  gem 'rspec-rails', '2.6.1'
+end
+
+group :test do
+  gem 'rspec-rails', '2.6.1'
+  gem 'webrat', '0.7.1'
 end
 
 gem 'json'
@@ -23,6 +32,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
