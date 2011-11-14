@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @plan.name %>
+</p>
+
+<p>
+  <b>Disbursement date:</b>
+  <%= @plan.disbursement_date %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <%= @plan.expiration_date %>
+</p>
+
+<p>
+  <b>Credit:</b>
+  <%= @plan.credit %>
+</p>
+
+<p>
+  <b>Ratio:</b>
+  <%= @plan.ratio %>
+</p>
+
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', plans_path %>

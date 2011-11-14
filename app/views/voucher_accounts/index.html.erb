@@ -1,0 +1,27 @@
+<h1>Listing voucher_accounts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Balence</th>
+    <th>Currency</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @voucher_accounts.each do |voucher_account| %>
+  <tr>
+    <td><%= voucher_account.name %></td>
+    <td><%= voucher_account.balence %></td>
+    <td><%= voucher_account.currency %></td>
+    <td><%= link_to 'Show', voucher_account %></td>
+    <td><%= link_to 'Edit', edit_voucher_account_path(voucher_account) %></td>
+    <td><%= link_to 'Destroy', voucher_account, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Voucher account', new_voucher_account_path %>
